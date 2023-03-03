@@ -1,0 +1,74 @@
+.container {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 2rem;
+
+    margin-top: 10rem;
+}
+
+.heading-primary {
+    text-decoration: underline;
+    letter-spacing: 10px;
+    font-size: 4.209rem;
+}
+
+.heading-secondary {
+    letter-spacing: 5px;
+    font-size: 3.157rem;
+}
+
+.contact {
+    margin-top: 3rem;
+}
+
+.details {
+    margin-top: 3rem;
+}
+
+.number {
+    letter-spacing: 1rem;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+/*
+  Reset
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
