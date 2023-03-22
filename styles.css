@@ -5,8 +5,7 @@
     place-items: center;
     text-align: center;
     gap: 2rem;
-
-    margin-top: 10rem;
+    height: 80vh;
 }
 
 .heading-primary {
@@ -25,16 +24,21 @@
 }
 
 .details {
-    margin-top: 3rem;
+margin-top: 3rem;
 }
 
 .number {
     letter-spacing: 1rem;
+    margin-top: 3rem;
+}
+
+a {
+  color: inherit;
 }
 
 @media (max-width: 600px) {
     html {
-        font-size: 50%;
+        font-size: 40%;
     }
 }
 
