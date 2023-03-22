@@ -5,7 +5,7 @@
     place-items: center;
     text-align: center;
     gap: 2rem;
-    height: 80vh;
+    height: 100%;
 }
 
 .heading-primary {
@@ -19,7 +19,7 @@
     font-size: 3.157rem;
 }
 
-.contact {
+.margin-top-3 {
     margin-top: 3rem;
 }
 
