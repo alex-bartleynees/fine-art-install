@@ -38,6 +38,7 @@ a {
 
 html {
   font-size: 70%;
+  text-shadow: -10px 10px 10px hsla(241, 91%, 45%, 0.4);
 }
 
 @media (min-width: 1800px) {
