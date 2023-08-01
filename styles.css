@@ -107,3 +107,8 @@ a {
 a:hover {
   text-shadow: -10px 10px 10px hsla(241, 91%, 45%, 0.8);
 }
+
+h1,
+h2 {
+  font-weight: 400;
+}
