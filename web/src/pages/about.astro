@@ -1,0 +1,56 @@
+---
+import { useSanityClient } from "@sanity/astro";
+import Layout from "../layouts/Layout.astro";
+import { PortableText } from "astro-portabletext";
+import ImageViewer from "../components/image-viewer.svelte";
+const data = await useSanityClient().fetch(`*[_type == "about"][0]`);
+---
+
+<Layout title="About | Fine Art Install | Wellington">
+  <div class="container">
+    <section class="about-text">
+      <PortableText value={data.content} />
+    </section>
+
+    <section class="images">
+      <ImageViewer client:load images={data?.images} />
+    </section>
+
+    <section class="contact">
+      <a href=`mailto:${data?.email}`>{data?.email}</a>
+      <a href=`tel:${data?.phone}`>{data?.phone}</a>
+    </section>
+  </div>
+</Layout>
+
+<style lang="scss">
+  .container {
+    color: blue;
+    font-family: "Times New Roman", Times, serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100%;
+    max-height: 100svh;
+    margin: 0 1rem;
+  }
+
+  .about-text,
+  .contact {
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    @media (max-width: 820px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 0.75rem;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
