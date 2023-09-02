@@ -55,8 +55,9 @@
   }
 
   img {
-    max-width: 40svh;
-    height: auto;
+    max-height: 40svh;
+    height: 100;
+    width: 100%;
   }
 
   .buttons {
